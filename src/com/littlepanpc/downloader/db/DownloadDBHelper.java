@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 /**
  * @class: DownloadDBHelper
- * @Description: TODO
+ * @Description: create or update database table---\"downloads.db\"
  * @author: Peter Pan
  * @email: happychinapc@gmail.com
  * @date: 2014-5-19 下午6:07:39
@@ -26,7 +26,7 @@ public class DownloadDBHelper extends SQLiteOpenHelper {
 
 	/**
 	 * @Title: getInstance
-	 * @Description: concurrent singleTon
+	 * @Description: concurrent singleTon---double checking lock pattern
 	 * @param context
 	 * @return
 	 * @return DownloadDBHelper
@@ -46,7 +46,7 @@ public class DownloadDBHelper extends SQLiteOpenHelper {
 
 	/**
 	 * <p>Title: </p>
-	 * <p>Description: </p>
+	 * <p>Description: Constructor</p>
 	 *
 	 * @param context
 	 */
@@ -55,7 +55,13 @@ public class DownloadDBHelper extends SQLiteOpenHelper {
 		super(context, DB_NAME, null, DB_VERSION);
 		LogUtils.i(TAG, "DownloadDBHelper constructor");
 	}
-
+	
+	/* (non-Javadoc)
+	 * <p>Title: onCreate</p>
+	 * <p>Description: create database table</p>
+	 * @param db
+	 * @see android.database.sqlite.SQLiteOpenHelper#onCreate(android.database.sqlite.SQLiteDatabase)
+	 */
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		// TODO Auto-generated method stub
@@ -72,6 +78,14 @@ public class DownloadDBHelper extends SQLiteOpenHelper {
 		LogUtils.i(TAG, "onCreate finish");
 	}
 
+	/* (non-Javadoc)
+	 * <p>Title: onUpgrade</p>
+	 * <p>Description: update database table</p>
+	 * @param db
+	 * @param oldVersion
+	 * @param newVersion
+	 * @see android.database.sqlite.SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase, int, int)
+	 */
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		// TODO Auto-generated method stub
