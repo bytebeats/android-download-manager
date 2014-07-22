@@ -1,4 +1,3 @@
-
 package com.littlepanpc.downloader.util;
 
 import android.util.Log;
