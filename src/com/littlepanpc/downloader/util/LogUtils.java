@@ -1,13 +1,3 @@
-/*
- * 文件名：LogUtil.java
- * 版权：<版权>
- * 描述：<描述>
- * 创建人：xiaoying
- * 创建时间：2013-5-16
- * 修改人：xiaoying
- * 修改时间：2013-5-16
- * 版本：v1.0
- */
 
 package com.littlepanpc.downloader.util;
 
