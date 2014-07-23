@@ -28,7 +28,7 @@ public class DownloadDBOperator {
 
 	/**
 	 * @Title: insert
-	 * @Description: TODO
+	 * @Description: execute insertion operation
 	 * @param url
 	 * @param fileName
 	 * @return void
@@ -53,7 +53,7 @@ public class DownloadDBOperator {
 
 	/**
 	 * @Title: updateProgress
-	 * @Description: TODO
+	 * @Description: update the progress of downloading
 	 * @param url
 	 * @param downloaded_size
 	 * @param total_size
@@ -75,7 +75,7 @@ public class DownloadDBOperator {
 
 	/**
 	 * @Title: updateTaskStatus
-	 * @Description: TODO
+	 * @Description: update task status of downloading, like WAITING, DOWNLOADING, COMPLETE.
 	 * @param url
 	 * @param status
 	 * @return void
@@ -95,7 +95,7 @@ public class DownloadDBOperator {
 
 	/**
 	 * @Title: erase
-	 * @Description: TODO
+	 * @Description: remove the record of downloading task.
 	 * @param url
 	 * @return void
 	 * @throws
@@ -114,7 +114,7 @@ public class DownloadDBOperator {
 
 	/**
 	 * @Title: eraseCompletely
-	 * @Description: TODO
+	 * @Description: clear all downloading records.
 	 * @return void
 	 * @throws
 	 */
@@ -132,7 +132,7 @@ public class DownloadDBOperator {
 
 	/**
 	 * @Title: getTaskInfo
-	 * @Description: TODO
+	 * @Description: get information of downloadng task, like file name, directory name, url and so on.
 	 * @param url
 	 * @return
 	 * @return DownloadInfo
@@ -165,7 +165,7 @@ public class DownloadDBOperator {
 
 	/**
 	 * @Title: exists
-	 * @Description: TODO
+	 * @Description: is one download task for one url added.
 	 * @param url
 	 * @return
 	 * @return boolean
