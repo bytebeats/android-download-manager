@@ -36,4 +36,19 @@ public class DownloadInfo {
 		}
 		return false;
 	}
+	
+	
+	private volatile int hash = 0;
+
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		int result = hash;
+		if (result == 0) {
+			result = 17;
+			result += 31 * result + url.hashCode();
+			result += 31 * result + name.hashCode();
+		}
+		return result;
+	}
 }
