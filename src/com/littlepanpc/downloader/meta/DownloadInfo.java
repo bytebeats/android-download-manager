@@ -1,5 +1,14 @@
 package com.littlepanpc.downloader.meta;
 
+/**
+ * @class: DownloadInfo
+ * @Description: some information about download task.
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-7-24 上午9:34:01
+ * @since: 1.0.0
+ * 
+ */
 public class DownloadInfo {
 	public String url;
 	public String name;
