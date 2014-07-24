@@ -37,7 +37,6 @@ public class DownloadInfo {
 		return false;
 	}
 	
-	
 	private volatile int hash = 0;
 
 	@Override
