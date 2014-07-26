@@ -20,6 +20,15 @@ import com.littlepanpc.downloader.util.StorageUtils;
 import android.accounts.NetworkErrorException;
 import android.content.Context;
 
+/**
+ * @class: AsyncDownloadTask
+ * @Description: to download file as a Runnable
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-7-26 上午10:07:59
+ * @since: 1.0.0
+ *
+ */
 public class AsyncDownloadTask implements Runnable {
 
 	private static final String TAG = AsyncDownloadTask.class.getSimpleName();
