@@ -241,5 +241,14 @@ public class AsyncDownloadTask implements Runnable {
 		}
 		return false;
 	}
+	
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		int result = 17;
+		result += 31 * result + url.hashCode();
+		result += 31 * result + fileName.hashCode();
+		return result;
+	}
 
 }
