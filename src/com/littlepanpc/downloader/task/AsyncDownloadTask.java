@@ -50,6 +50,14 @@ public class AsyncDownloadTask implements Runnable {
 	private File tempFile;
 	private CommonHttpClient client;
 
+	/**
+	 * <p>Title: </p>
+	 * <p>Description: Constructor, initialize the target file and a temporary file.</p>
+	 *
+	 * @param context
+	 * @param url
+	 * @param fileName
+	 */
 	public AsyncDownloadTask(Context context, String url, String fileName) {
 		this.context = context;
 		this.url = url;
