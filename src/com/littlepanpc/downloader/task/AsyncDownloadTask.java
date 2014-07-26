@@ -76,7 +76,12 @@ public class AsyncDownloadTask implements Runnable {
 				+ TEMP_FILE_SUFFIX);
 		LogUtils.i(TAG, "AsyncDownloadTask Constructor");
 	}
-
+	
+	/* (non-Javadoc)
+	 * <p>Title: run</p>
+	 * <p>Description: download the file.</p>
+	 * @see java.lang.Runnable#run()
+	 */
 	@SuppressWarnings("resource")
 	@Override
 	public void run() {
