@@ -228,7 +228,16 @@ public class AsyncDownloadTask implements Runnable {
 		LogUtils.i(TAG, "setProgressListener");
 		this.progressListener = progressListener;
 	}
-
+	
+	/**
+	 * @class: DownloadProgressListener
+	 * @Description: listen to the downloading progress of download task.
+	 * @author: Peter Pan
+	 * @email: happychinapc@gmail.com
+	 * @date: 2014-7-26 上午10:05:56
+	 * @since: 1.0.0
+	 *
+	 */
 	public interface DownloadProgressListener {
 		void onTaskStart();
 
