@@ -245,7 +245,16 @@ public class AsyncDownloadTask implements Runnable {
 
 		void onTaskFinish();
 	}
-
+	
+	/**
+	 * @class: TaskStatus
+	 * @Description: downloading status of single download task.
+	 * @author: Peter Pan
+	 * @email: happychinapc@gmail.com
+	 * @date: 2014-7-26 上午10:05:21
+	 * @since: 1.0.0
+	 *
+	 */
 	public enum TaskStatus {
 		WAITING(0), DOWNLOADING(1), PAUSED(2), FINISHED(3);
 		private int status;
