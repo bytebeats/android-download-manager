@@ -1,5 +1,14 @@
 package com.littlepanpc.downloader.exception;
 
+/**
+ * @class: DownloadingException
+ * @Description: throw DownloadException when downloading error.
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-7-28 上午9:05:17
+ * @since: 1.0.0
+ *
+ */
 public class DownloadingException extends RuntimeException {
 
 	/**
