@@ -12,7 +12,7 @@ package com.littlepanpc.downloader.exception;
 public class DownloadingException extends RuntimeException {
 
 	/**
-	 * @Field long serialVersionUID: TODO
+	 * @Field long serialVersionUID: RMI Usage
 	 */
 	private static final long serialVersionUID = 7449248441719450018L;
 
