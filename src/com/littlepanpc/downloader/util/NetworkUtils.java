@@ -35,7 +35,13 @@ public class NetworkUtils {
 		LogUtils.i(TAG, "isNetworkAvailable---end");
 		return false;
 	}
-	
+	/**
+	 * @Title: getFileNameFromUrl
+	 * @Description: obtain file name from the url
+	 * @param url
+	 * @return String
+	 * @throws 
+	 */
 	public static String getFileNameFromUrl(String url) {
 		// 通过 ‘？’ 和 ‘/’ 判断文件名
 		int index = url.lastIndexOf('?');
