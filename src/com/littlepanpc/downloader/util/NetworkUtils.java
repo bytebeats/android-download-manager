@@ -8,7 +8,14 @@ import android.net.NetworkInfo;
 
 public class NetworkUtils {
 	private static final String TAG = NetworkUtils.class.getSimpleName();
-	
+	/**
+	 * @Title: isNetworkAvailable
+	 * @Description: verify whether the network is available
+	 * @param context
+	 * @return
+	 * @return boolean
+	 * @throws 
+	 */
 	public static boolean isNetworkAvailable(Context context) {
 		LogUtils.i(TAG, "isNetworkAvailable--- start");
 		ConnectivityManager connectivity = (ConnectivityManager) context
