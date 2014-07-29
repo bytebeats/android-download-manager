@@ -5,7 +5,15 @@ import java.util.UUID;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-
+/**
+ * @class: NetworkUtils
+ * @Description: network utility.
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-7-29 上午10:43:24
+ * @since: 1.0.0
+ *
+ */
 public class NetworkUtils {
 	private static final String TAG = NetworkUtils.class.getSimpleName();
 	/**
