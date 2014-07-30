@@ -2,7 +2,15 @@ package com.littlepanpc.downloader.util;
 
 import android.os.Environment;
 import android.os.StatFs;
-
+/**
+ * @class: StorageUtils
+ * @Description: Storage Utility.
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-7-30 上午10:33:07
+ * @since: 1.0.0
+ *
+ */
 public class StorageUtils {
 	public static final String DOWNLOAD_DIRECTORY = Environment
 			.getExternalStorageDirectory() + "/downloads";
