@@ -17,6 +17,9 @@ public class StorageUtils {
 	 */
 	public static final String DOWNLOAD_DIRECTORY = Environment
 			.getExternalStorageDirectory() + "/downloads";
+	/**
+	 * @Field String DOWNLOAD_DIRECTORY_TEMP: temporary store directory.
+	 */
 	public static final String DOWNLOAD_DIRECTORY_TEMP = Environment
 			.getExternalStorageDirectory() + "/downloads/tmps";
 	/**
