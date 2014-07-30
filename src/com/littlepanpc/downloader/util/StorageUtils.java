@@ -12,6 +12,9 @@ import android.os.StatFs;
  *
  */
 public class StorageUtils {
+	/**
+	 * @Field String DOWNLOAD_DIRECTORY: store directory.
+	 */
 	public static final String DOWNLOAD_DIRECTORY = Environment
 			.getExternalStorageDirectory() + "/downloads";
 	public static final String DOWNLOAD_DIRECTORY_TEMP = Environment
