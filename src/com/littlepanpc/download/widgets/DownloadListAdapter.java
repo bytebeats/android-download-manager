@@ -96,7 +96,15 @@ public class DownloadListAdapter extends BaseAdapter {
 
 		return convertView;
 	}
-
+        /**
+	 * @class: DownloadBtnListener
+	 * @Description: Listener of Events of Click of Buttons about downloading 
+	 * @author: Peter Pan
+	 * @email: happychinapc@gmail.com
+	 * @date: 2014-8-14 上午9:21:39
+	 * @since: 1.0.0
+	 *
+	 */
 	private class DownloadBtnListener implements View.OnClickListener {
 		private String url;
 		private ViewHolder mViewHolder;
