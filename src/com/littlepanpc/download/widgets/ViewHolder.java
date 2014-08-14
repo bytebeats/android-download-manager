@@ -87,7 +87,16 @@ public class ViewHolder {
 	public void setData(String url, String speed, String progress) {
 		setData(url, speed, progress, false + "");
 	}
-
+	/**
+	 * @Title: setData
+	 * @Description: Update Progress of Downloading Task
+	 * @param url
+	 * @param speed
+	 * @param progress
+	 * @param isPaused
+	 * @return void
+	 * @throws 
+	 */
 	public void setData(String url, String speed, String progress,
 			String isPaused) {
 		if (hasInited) {
@@ -106,7 +115,13 @@ public class ViewHolder {
 
 		}
 	}
-
+	/**
+	 * @Title: bindTask
+	 * @Description: Update Progress of Downloading Task
+	 * @param task
+	 * @return void
+	 * @throws 
+	 */
 	public void bindTask(DownloadTask task) {
 		if (hasInited) {
 			titleText.setText(NetworkUtils.getFileNameFromUrl(task.getUrl()));
