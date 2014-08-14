@@ -13,7 +13,15 @@ import android.widget.BaseAdapter;
 
 import com.littlepanpc.download.aidl.IDownloadService;
 import com.littlepanpc.android_download_manager.R;
-
+/**
+ * @class: DownloadListAdapter
+ * @Description: Download List Adapter
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-8-14 上午9:21:05
+ * @since: 1.0.0
+ *
+ */
 public class DownloadListAdapter extends BaseAdapter {
 	private static final String TAG = DownloadListAdapter.class.getName();
 	private Context mContext;
