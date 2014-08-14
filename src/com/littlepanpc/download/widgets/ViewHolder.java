@@ -11,7 +11,15 @@ import android.widget.TextView;
 import com.littlepanpc.download.services.DownloadTask;
 import com.littlepanpc.download.utils.NetworkUtils;
 import com.littlepanpc.android_download_manager.R;
-
+/**
+ * @class: ViewHolder
+ * @Description: Holder of Views about Progress Show.
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-8-14 上午9:26:20
+ * @since: 1.0.0
+ *
+ */
 public class ViewHolder {
 
 	public static final int KEY_URL = 0;
