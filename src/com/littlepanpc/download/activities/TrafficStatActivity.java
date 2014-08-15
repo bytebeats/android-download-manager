@@ -15,7 +15,15 @@ import android.widget.TextView;
 import com.littlepanpc.download.utils.ConfigUtils;
 import com.littlepanpc.download.utils.StorageUtils;
 import com.littlepanpc.android_download_manager.R;
-
+/**
+ * @class: TrafficStatActivity
+ * @Description: Show the information of networks
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-8-15 上午9:35:53
+ * @since: 1.0.0
+ *
+ */
 public class TrafficStatActivity extends Activity {
 	private static final String TAG = TrafficStatActivity.class.getSimpleName();
 
