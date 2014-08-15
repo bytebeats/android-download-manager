@@ -66,7 +66,13 @@ public class TrafficStatActivity extends Activity {
 
 		getTrafficStats();
 	}
-
+	/**
+	 * @Title: getTrafficStats
+	 * @Description: get information about rate of network links
+	 * @return void
+	 * @throws 
+	 */
+	@TargetApi(Build.VERSION_CODES.FROYO)
 	private void getTrafficStats() {
 		Log.i(TAG, "getTrafficStats");
 		ConnectivityManager conn = (ConnectivityManager) this
