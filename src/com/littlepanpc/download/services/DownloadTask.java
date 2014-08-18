@@ -24,6 +24,15 @@ import java.io.RandomAccessFile;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * @class: DownloadTask
+ * @Description: AsyncTask to download
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-8-18 上午10:09:20
+ * @since: 1.0.0
+ * 
+ */
 public class DownloadTask extends AsyncTask<Void, Integer, Long> {
 	private static final String TAG = DownloadTask.class.getName();
 
