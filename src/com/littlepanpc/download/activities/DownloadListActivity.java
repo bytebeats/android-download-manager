@@ -29,6 +29,15 @@ import android.widget.Toast;
 
 import java.io.IOException;
 
+/**
+ * @class: DownloadListActivity
+ * @Description: TODO
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-8-18 上午10:06:41
+ * @since: 1.0.0
+ *
+ */
 public class DownloadListActivity extends Activity implements OnClickListener,
 		ServiceConnection {
 	private static final String TAG = DownloadListActivity.class
