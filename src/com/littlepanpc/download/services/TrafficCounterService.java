@@ -18,6 +18,15 @@ import android.util.Log;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * @class: TrafficCounterService
+ * @Description: Check network status
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-8-18 上午10:16:23
+ * @since: 1.0.0
+ *
+ */
 public class TrafficCounterService extends Service {
 	private static final String TAG = TrafficCounterService.class.getName();
 
