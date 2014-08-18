@@ -33,6 +33,7 @@ import java.net.URL;
  * @since: 1.0.0
  * 
  */
+@TargetApi(Build.VERSION_CODES.CUPCAKE)
 public class DownloadTask extends AsyncTask<Void, Integer, Long> {
 	private static final String TAG = DownloadTask.class.getName();
 
@@ -217,7 +218,8 @@ public class DownloadTask extends AsyncTask<Void, Integer, Long> {
 	private AndroidHttpClient client;
 	private HttpGet httpGet;
 	private HttpResponse response;
-
+	
+	@TargetApi(Build.VERSION_CODES.ECLAIR)
 	private long download() throws NetworkErrorException, IOException,
 			FileAlreadyExistException, NoMemoryException {
 		Log.i(TAG, "download");
@@ -298,6 +300,7 @@ public class DownloadTask extends AsyncTask<Void, Integer, Long> {
 
 	}
 
+	@TargetApi(Build.VERSION_CODES.ECLAIR)
 	public int copy(InputStream input, RandomAccessFile out)
 			throws IOException, NetworkErrorException {
 		Log.i(TAG, "copy");
