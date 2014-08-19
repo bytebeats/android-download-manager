@@ -7,7 +7,15 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.Log;
-
+/**
+ * @class: DownloadService
+ * @Description: Service to manage download tasks
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-8-19 上午9:08:44
+ * @since: 1.0.0
+ *
+ */
 public class DownloadService extends Service {
 	private static final String TAG = DownloadService.class.getName();
 	private DownloadManager mDownloadManager;
