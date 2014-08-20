@@ -9,7 +9,15 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.text.TextUtils;
 import android.util.Log;
-
+/**
+ * @class: ConfigUtils
+ * @Description: TODO
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-8-20 上午11:06:04
+ * @since: 1.0.0
+ *
+ */
 public class ConfigUtils {
 	private static final String TAG = ConfigUtils.class.getName();
 	public static final String PREFERENCE_NAME = "android-download-manager";
