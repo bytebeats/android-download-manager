@@ -18,6 +18,14 @@ import android.util.Log;
 public class NetworkUtils {
 	private static final String TAG = NetworkUtils.class.getName();
 
+	/**
+	 * @Title: isNetworkAvailable
+	 * @Description: TODO
+	 * @param context
+	 * @return
+	 * @return boolean
+	 * @throws 
+	 */
 	public static boolean isNetworkAvailable(Context context) {
 		Log.i(TAG, "isNetworkAvailable");
 		ConnectivityManager connectivity = (ConnectivityManager) context
