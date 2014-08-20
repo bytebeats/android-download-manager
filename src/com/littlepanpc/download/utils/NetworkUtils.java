@@ -6,7 +6,15 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
-
+/**
+ * @class: NetworkUtils
+ * @Description: TODO
+ * @author: Peter Pan
+ * @email: happychinapc@gmail.com
+ * @date: 2014-8-20 上午11:07:39
+ * @since: 1.0.0
+ *
+ */
 public class NetworkUtils {
 	private static final String TAG = NetworkUtils.class.getName();
 
