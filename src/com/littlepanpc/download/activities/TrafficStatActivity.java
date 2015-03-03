@@ -6,6 +6,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.TrafficStats;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -72,7 +73,6 @@ public class TrafficStatActivity extends Activity {
 	 * @return void
 	 * @throws 
 	 */
-	@TargetApi(Build.VERSION_CODES.FROYO)
 	private void getTrafficStats() {
 		Log.i(TAG, "getTrafficStats");
 		ConnectivityManager conn = (ConnectivityManager) this
