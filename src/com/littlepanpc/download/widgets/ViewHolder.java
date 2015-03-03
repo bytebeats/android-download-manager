@@ -49,7 +49,6 @@ public class ViewHolder {
 			hasInited = true;
 		}
 	}
-	@SuppressLint("UseSparseArrays")
 	public static HashMap<Integer, String> getItemDataMap(String url,
 			String speed, String progress, String isPaused) {
 		HashMap<Integer, String> item = new HashMap<Integer, String>();
