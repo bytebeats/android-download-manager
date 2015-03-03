@@ -11,6 +11,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.conn.ConnectTimeoutException;
 
 import android.accounts.NetworkErrorException;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -33,7 +34,6 @@ import java.net.URL;
  * @since: 1.0.0
  * 
  */
-@TargetApi(Build.VERSION_CODES.CUPCAKE)
 public class DownloadTask extends AsyncTask<Void, Integer, Long> {
 	private static final String TAG = DownloadTask.class.getName();
 
@@ -169,7 +169,7 @@ public class DownloadTask extends AsyncTask<Void, Integer, Long> {
 
 	@Override
 	protected void onProgressUpdate(Integer... progress) {
-//		Log.i(TAG, "onProgressUpdate");
+		// Log.i(TAG, "onProgressUpdate");
 		if (progress.length > 1) {
 			totalSize = progress[1];
 			if (totalSize == -1) {
@@ -218,8 +218,7 @@ public class DownloadTask extends AsyncTask<Void, Integer, Long> {
 	private AndroidHttpClient client;
 	private HttpGet httpGet;
 	private HttpResponse response;
-	
-	@TargetApi(Build.VERSION_CODES.ECLAIR)
+
 	private long download() throws NetworkErrorException, IOException,
 			FileAlreadyExistException, NoMemoryException {
 		Log.i(TAG, "download");
@@ -300,7 +299,6 @@ public class DownloadTask extends AsyncTask<Void, Integer, Long> {
 
 	}
 
-	@TargetApi(Build.VERSION_CODES.ECLAIR)
 	public int copy(InputStream input, RandomAccessFile out)
 			throws IOException, NetworkErrorException {
 		Log.i(TAG, "copy");
