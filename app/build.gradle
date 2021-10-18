@@ -6,9 +6,10 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        applicationId "me.bytebeats.recycler"
+        applicationId "me.bytebeats.downloader"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
